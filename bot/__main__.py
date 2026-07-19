@@ -1,3 +1,7 @@
+import asyncio
+# Create event loop before importing pyrogram (required for Python 3.14+)
+asyncio.set_event_loop(asyncio.new_event_loop())
+
 from pyrogram import Client
 import config
 
